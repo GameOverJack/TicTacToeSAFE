@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-TTTserver" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver"/>
+        <property name="wsdl-TTTserver" location="xml-resources/web-service-references/TTTserver/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver" destdir="${build.generated.dir}/jax-wsCache/TTTserver" wsdl="${wsdl-TTTserver}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_1"/>
+        <property name="wsdl-TTTserver_1" location="xml-resources/web-service-references/TTTserver_1/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_1" destdir="${build.generated.dir}/jax-wsCache/TTTserver_1" wsdl="${wsdl-TTTserver_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_2"/>
+        <property name="wsdl-TTTserver_2" location="xml-resources/web-service-references/TTTserver_2/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_2" destdir="${build.generated.dir}/jax-wsCache/TTTserver_2" wsdl="${wsdl-TTTserver_2}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_2}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_2" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_2"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_3" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_3"/>
+        <property name="wsdl-TTTserver_3" location="xml-resources/web-service-references/TTTserver_3/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_3" destdir="${build.generated.dir}/jax-wsCache/TTTserver_3" wsdl="${wsdl-TTTserver_3}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_3}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_3"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_3">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_3" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_3"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_4" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_4"/>
+        <property name="wsdl-TTTserver_4" location="xml-resources/web-service-references/TTTserver_4/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_4" destdir="${build.generated.dir}/jax-wsCache/TTTserver_4" wsdl="${wsdl-TTTserver_4}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_4}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_4"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_4">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_4" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_4"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_5" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_5"/>
+        <property name="wsdl-TTTserver_5" location="xml-resources/web-service-references/TTTserver_5/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_5" destdir="${build.generated.dir}/jax-wsCache/TTTserver_5" wsdl="${wsdl-TTTserver_5}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_5}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_5"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_5">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_5" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_5"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_6" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_6"/>
+        <property name="wsdl-TTTserver_6" location="xml-resources/web-service-references/TTTserver_6/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_6" destdir="${build.generated.dir}/jax-wsCache/TTTserver_6" wsdl="${wsdl-TTTserver_6}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_6}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_6"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_6">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_6" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_6"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_7" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_7"/>
+        <property name="wsdl-TTTserver_7" location="xml-resources/web-service-references/TTTserver_7/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_7" destdir="${build.generated.dir}/jax-wsCache/TTTserver_7" wsdl="${wsdl-TTTserver_7}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_7}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_7"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_7">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_7" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_7"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_8" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_8"/>
+        <property name="wsdl-TTTserver_8" location="xml-resources/web-service-references/TTTserver_8/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_8" destdir="${build.generated.dir}/jax-wsCache/TTTserver_8" wsdl="${wsdl-TTTserver_8}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_8}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_8"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_8">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_8" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_8"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_9" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_9"/>
+        <property name="wsdl-TTTserver_9" location="xml-resources/web-service-references/TTTserver_9/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_9" destdir="${build.generated.dir}/jax-wsCache/TTTserver_9" wsdl="${wsdl-TTTserver_9}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_9}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_9"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_9">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_9" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_9"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_10" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_10"/>
+        <property name="wsdl-TTTserver_10" location="xml-resources/web-service-references/TTTserver_10/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_10" destdir="${build.generated.dir}/jax-wsCache/TTTserver_10" wsdl="${wsdl-TTTserver_10}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_10}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_10"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_10">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_10" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_10"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_11" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_11"/>
+        <property name="wsdl-TTTserver_11" location="xml-resources/web-service-references/TTTserver_11/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_11" destdir="${build.generated.dir}/jax-wsCache/TTTserver_11" wsdl="${wsdl-TTTserver_11}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_11}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_11"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_11">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_11" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_11"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_12" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_12"/>
+        <property name="wsdl-TTTserver_12" location="xml-resources/web-service-references/TTTserver_12/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_12" destdir="${build.generated.dir}/jax-wsCache/TTTserver_12" wsdl="${wsdl-TTTserver_12}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_12}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_12"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_12">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_12" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_12"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_13" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_13"/>
+        <property name="wsdl-TTTserver_13" location="xml-resources/web-service-references/TTTserver_13/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_13" destdir="${build.generated.dir}/jax-wsCache/TTTserver_13" wsdl="${wsdl-TTTserver_13}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_13}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_13"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_13">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_13" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_13"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_14" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_14"/>
+        <property name="wsdl-TTTserver_14" location="xml-resources/web-service-references/TTTserver_14/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_14" destdir="${build.generated.dir}/jax-wsCache/TTTserver_14" wsdl="${wsdl-TTTserver_14}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_14}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_14"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_14">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_14" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_14"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_15" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_15"/>
+        <property name="wsdl-TTTserver_15" location="xml-resources/web-service-references/TTTserver_15/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_15" destdir="${build.generated.dir}/jax-wsCache/TTTserver_15" wsdl="${wsdl-TTTserver_15}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_15}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_15"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_15">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_15" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_15"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_16" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_16"/>
+        <property name="wsdl-TTTserver_16" location="xml-resources/web-service-references/TTTserver_16/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_16" destdir="${build.generated.dir}/jax-wsCache/TTTserver_16" wsdl="${wsdl-TTTserver_16}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_16}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_16"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_16">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_16" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_16"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_17" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_17"/>
+        <property name="wsdl-TTTserver_17" location="xml-resources/web-service-references/TTTserver_17/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_17" destdir="${build.generated.dir}/jax-wsCache/TTTserver_17" wsdl="${wsdl-TTTserver_17}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_17}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_17"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_17">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_17" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_17"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_18" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_18"/>
+        <property name="wsdl-TTTserver_18" location="xml-resources/web-service-references/TTTserver_18/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_18" destdir="${build.generated.dir}/jax-wsCache/TTTserver_18" wsdl="${wsdl-TTTserver_18}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_18}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_18"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_18">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_18" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_18"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_19" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_19"/>
+        <property name="wsdl-TTTserver_19" location="xml-resources/web-service-references/TTTserver_19/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_19" destdir="${build.generated.dir}/jax-wsCache/TTTserver_19" wsdl="${wsdl-TTTserver_19}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_19}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_19"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_19">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_19" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_19"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_20" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_20"/>
+        <property name="wsdl-TTTserver_20" location="xml-resources/web-service-references/TTTserver_20/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_20" destdir="${build.generated.dir}/jax-wsCache/TTTserver_20" wsdl="${wsdl-TTTserver_20}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_20}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_20"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_20">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_20" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_20"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_21" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_21"/>
+        <property name="wsdl-TTTserver_21" location="xml-resources/web-service-references/TTTserver_21/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_21" destdir="${build.generated.dir}/jax-wsCache/TTTserver_21" wsdl="${wsdl-TTTserver_21}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_21}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_21"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_21">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_21" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_21"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_22" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_22"/>
+        <property name="wsdl-TTTserver_22" location="xml-resources/web-service-references/TTTserver_22/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_22" destdir="${build.generated.dir}/jax-wsCache/TTTserver_22" wsdl="${wsdl-TTTserver_22}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_22}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_22"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_22">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_22" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_22"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_23" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_23"/>
+        <property name="wsdl-TTTserver_23" location="xml-resources/web-service-references/TTTserver_23/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_23" destdir="${build.generated.dir}/jax-wsCache/TTTserver_23" wsdl="${wsdl-TTTserver_23}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_23}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_23"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_23">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_23" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_23"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TicTacToeServer" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TicTacToeServer"/>
+        <property name="wsdl-TicTacToeServer" location="xml-resources/web-service-references/TicTacToeServer/wsdl/localhost_53340/TicTacToeServer/TicTacToeServer.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TicTacToeServer" destdir="${build.generated.dir}/jax-wsCache/TicTacToeServer" wsdl="${wsdl-TicTacToeServer}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeServer/TicTacToeServer?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TicTacToeServer}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TicTacToeServer"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TicTacToeServer">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TicTacToeServer" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TicTacToeServer"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/server/game"/>
+    </target>
+    <target name="wsimport-client-TTTserver_24" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_24"/>
+        <property name="wsdl-TTTserver_24" location="xml-resources/web-service-references/TTTserver_24/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_24" destdir="${build.generated.dir}/jax-wsCache/TTTserver_24" wsdl="${wsdl-TTTserver_24}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_24}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_24"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_24">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_24" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_24"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TTTserver_25" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TTTserver_25"/>
+        <property name="wsdl-TTTserver_25" location="xml-resources/web-service-references/TTTserver_25/wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TTTserver_25" destdir="${build.generated.dir}/jax-wsCache/TTTserver_25" wsdl="${wsdl-TTTserver_25}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TTTserver_25}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TTTserver_25"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TTTserver_25">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TTTserver_25" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TTTserver_25"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/game/server"/>
+    </target>
+    <target name="wsimport-client-TicTacToeServer_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_1"/>
+        <property name="wsdl-TicTacToeServer_1" location="xml-resources/web-service-references/TicTacToeServer_1/wsdl/localhost_53340/TicTacToeServer/TicTacToeServer.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_1" destdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_1" wsdl="${wsdl-TicTacToeServer_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeServer/TicTacToeServer?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TicTacToeServer_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TicTacToeServer_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/server/game"/>
+    </target>
+    <target name="wsimport-client-TicTacToeServer_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_2"/>
+        <property name="wsdl-TicTacToeServer_2" location="xml-resources/web-service-references/TicTacToeServer_2/wsdl/localhost_53340/TicTacToeServer/TicTacToeServer.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_2" destdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_2" wsdl="${wsdl-TicTacToeServer_2}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeServer/TicTacToeServer?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TicTacToeServer_2}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TicTacToeServer_2" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_2"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/server/game"/>
+    </target>
+    <target name="wsimport-client-TicTacToeServer_3" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_3"/>
+        <property name="wsdl-TicTacToeServer_3" location="xml-resources/web-service-references/TicTacToeServer_3/wsdl/localhost_53340/TicTacToeServer/TicTacToeServer.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_3" destdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_3" wsdl="${wsdl-TicTacToeServer_3}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeServer/TicTacToeServer?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TicTacToeServer_3}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_3"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_3">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TicTacToeServer_3" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_3"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/server/game"/>
+    </target>
+    <target name="wsimport-client-TicTacToeServer_4" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_4"/>
+        <property name="wsdl-TicTacToeServer_4" location="xml-resources/web-service-references/TicTacToeServer_4/wsdl/localhost_53340/TicTacToeServer/TicTacToeServer.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_4" destdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_4" wsdl="${wsdl-TicTacToeServer_4}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeServer/TicTacToeServer?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TicTacToeServer_4}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_4"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_4">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TicTacToeServer_4" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_4"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/server/game"/>
+    </target>
+    <target name="wsimport-client-TicTacToeServer_5" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_5"/>
+        <property name="wsdl-TicTacToeServer_5" location="xml-resources/web-service-references/TicTacToeServer_5/wsdl/localhost_53340/TicTacToeServer/TicTacToeServer.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_5" destdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_5" wsdl="${wsdl-TicTacToeServer_5}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeServer/TicTacToeServer?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TicTacToeServer_5}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_5"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_5">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TicTacToeServer_5" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_5"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/server/game"/>
+    </target>
+    <target name="wsimport-client-TicTacToeServer_6" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_6"/>
+        <property name="wsdl-TicTacToeServer_6" location="xml-resources/web-service-references/TicTacToeServer_6/wsdl/localhost_53340/TicTacToeServer/TicTacToeServer.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_6" destdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_6" wsdl="${wsdl-TicTacToeServer_6}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeServer/TicTacToeServer?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TicTacToeServer_6}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_6"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_6">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TicTacToeServer_6" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_6"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/server/game"/>
+    </target>
+    <target name="wsimport-client-TicTacToeServer_7" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_7"/>
+        <property name="wsdl-TicTacToeServer_7" location="xml-resources/web-service-references/TicTacToeServer_7/wsdl/localhost_53340/TicTacToeServer/TicTacToeServer.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_7" destdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_7" wsdl="${wsdl-TicTacToeServer_7}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeServer/TicTacToeServer?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TicTacToeServer_7}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_7"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_7">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TicTacToeServer_7" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_7"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/server/game"/>
+    </target>
+    <target name="wsimport-client-TicTacToeServer_8" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_8"/>
+        <property name="wsdl-TicTacToeServer_8" location="xml-resources/web-service-references/TicTacToeServer_8/wsdl/localhost_53340/TicTacToeServer/TicTacToeServer.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_8" destdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_8" wsdl="${wsdl-TicTacToeServer_8}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeServer/TicTacToeServer?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TicTacToeServer_8}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_8"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_8">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TicTacToeServer_8" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_8"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/server/game"/>
+    </target>
+    <target name="wsimport-client-TicTacToeServer_9" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_9"/>
+        <property name="wsdl-TicTacToeServer_9" location="xml-resources/web-service-references/TicTacToeServer_9/wsdl/localhost_53340/TicTacToeServer/TicTacToeServer.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_9" destdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_9" wsdl="${wsdl-TicTacToeServer_9}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeServer/TicTacToeServer?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TicTacToeServer_9}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_9"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_9">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TicTacToeServer_9" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_9"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/server/game"/>
+    </target>
+    <target name="wsimport-client-TicTacToeServer_10" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_10"/>
+        <property name="wsdl-TicTacToeServer_10" location="xml-resources/web-service-references/TicTacToeServer_10/wsdl/localhost_53340/TicTacToeServer/TicTacToeServer.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_10" destdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_10" wsdl="${wsdl-TicTacToeServer_10}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeServer/TicTacToeServer?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TicTacToeServer_10}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_10"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_10">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TicTacToeServer_10" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_10"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/server/game"/>
+    </target>
+    <target name="wsimport-client-TicTacToeServer_11" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_11"/>
+        <property name="wsdl-TicTacToeServer_11" location="xml-resources/web-service-references/TicTacToeServer_11/wsdl/localhost_53340/TicTacToeServer/TicTacToeServer.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_11" destdir="${build.generated.dir}/jax-wsCache/TicTacToeServer_11" wsdl="${wsdl-TicTacToeServer_11}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:53340/TicTacToeServer/TicTacToeServer?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-TicTacToeServer_11}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_11"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_11">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TicTacToeServer_11" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TicTacToeServer_11"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ttt/server/game"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-TTTserver, wsimport-client-TTTserver_1, wsimport-client-TTTserver_2, wsimport-client-TTTserver_3, wsimport-client-TTTserver_4, wsimport-client-TTTserver_5, wsimport-client-TTTserver_6, wsimport-client-TTTserver_7, wsimport-client-TTTserver_8, wsimport-client-TTTserver_9, wsimport-client-TTTserver_10, wsimport-client-TTTserver_11, wsimport-client-TTTserver_12, wsimport-client-TTTserver_13, wsimport-client-TTTserver_14, wsimport-client-TTTserver_15, wsimport-client-TTTserver_16, wsimport-client-TTTserver_17, wsimport-client-TTTserver_18, wsimport-client-TTTserver_19, wsimport-client-TTTserver_20, wsimport-client-TTTserver_21, wsimport-client-TTTserver_22, wsimport-client-TTTserver_23, wsimport-client-TicTacToeServer, wsimport-client-TTTserver_24, wsimport-client-TTTserver_25, wsimport-client-TicTacToeServer_1, wsimport-client-TicTacToeServer_2, wsimport-client-TicTacToeServer_3, wsimport-client-TicTacToeServer_4, wsimport-client-TicTacToeServer_5, wsimport-client-TicTacToeServer_6, wsimport-client-TicTacToeServer_7, wsimport-client-TicTacToeServer_8, wsimport-client-TicTacToeServer_9, wsimport-client-TicTacToeServer_10, wsimport-client-TicTacToeServer_11"/>
+</project>

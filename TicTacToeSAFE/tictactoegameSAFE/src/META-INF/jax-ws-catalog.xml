@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:53340/TicTacToeLinker/TTTserver?wsdl" uri="wsdl/localhost_53340/TicTacToeLinker/TTTserver.wsdl"/>
+    <system systemId="http://localhost:53340/TicTacToeLinker/TTTserver?xsd=1" uri="wsdl/localhost_53340/TicTacToeLinker/TTTserver.xsd_1.xsd"/>
+    <system systemId="http://localhost:53340/TicTacToeServer/TicTacToeServer?wsdl" uri="wsdl/localhost_53340/TicTacToeServer/TicTacToeServer.wsdl"/>
+    <system systemId="http://localhost:53340/TicTacToeServer/TicTacToeServer?xsd=1" uri="wsdl/localhost_53340/TicTacToeServer/TicTacToeServer.xsd_1.xsd"/>
+</catalog>

@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://game.server.ttt/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://game.server.ttt/">
+
+<xs:element name="getIsFound" type="tns:getIsFound"/>
+
+<xs:element name="getIsFoundResponse" type="tns:getIsFoundResponse"/>
+
+<xs:element name="getPlayer1" type="tns:getPlayer1"/>
+
+<xs:element name="getPlayer1Response" type="tns:getPlayer1Response"/>
+
+<xs:element name="getPlayer2" type="tns:getPlayer2"/>
+
+<xs:element name="getPlayer2Response" type="tns:getPlayer2Response"/>
+
+<xs:element name="getSquare" type="tns:getSquare"/>
+
+<xs:element name="getSquareResponse" type="tns:getSquareResponse"/>
+
+<xs:element name="getWinLose" type="tns:getWinLose"/>
+
+<xs:element name="getWinLoseResponse" type="tns:getWinLoseResponse"/>
+
+<xs:element name="isFoundReset" type="tns:isFoundReset"/>
+
+<xs:element name="isFoundResetResponse" type="tns:isFoundResetResponse"/>
+
+<xs:element name="joinGame" type="tns:joinGame"/>
+
+<xs:element name="joinGameResponse" type="tns:joinGameResponse"/>
+
+<xs:element name="login" type="tns:login"/>
+
+<xs:element name="loginResponse" type="tns:loginResponse"/>
+
+<xs:element name="register" type="tns:register"/>
+
+<xs:element name="registerResponse" type="tns:registerResponse"/>
+
+<xs:element name="resetFound" type="tns:resetFound"/>
+
+<xs:element name="resetFoundResponse" type="tns:resetFoundResponse"/>
+
+<xs:element name="resetGame" type="tns:resetGame"/>
+
+<xs:element name="resetGameResponse" type="tns:resetGameResponse"/>
+
+<xs:element name="setDraws" type="tns:setDraws"/>
+
+<xs:element name="setDrawsResponse" type="tns:setDrawsResponse"/>
+
+<xs:element name="setLoses" type="tns:setLoses"/>
+
+<xs:element name="setLosesResponse" type="tns:setLosesResponse"/>
+
+<xs:element name="setPlayerMove" type="tns:setPlayerMove"/>
+
+<xs:element name="setPlayerMoveResponse" type="tns:setPlayerMoveResponse"/>
+
+<xs:element name="setResetGame" type="tns:setResetGame"/>
+
+<xs:element name="setResetGameResponse" type="tns:setResetGameResponse"/>
+
+<xs:element name="setWinLose" type="tns:setWinLose"/>
+
+<xs:element name="setWinLoseResponse" type="tns:setWinLoseResponse"/>
+
+<xs:element name="setWins" type="tns:setWins"/>
+
+<xs:element name="setWinsResponse" type="tns:setWinsResponse"/>
+
+<xs:element name="showComboBox" type="tns:showComboBox"/>
+
+<xs:element name="showComboBoxResponse" type="tns:showComboBoxResponse"/>
+
+<xs:element name="showLeaderboards" type="tns:showLeaderboards"/>
+
+<xs:element name="showLeaderboardsResponse" type="tns:showLeaderboardsResponse"/>
+
+<xs:element name="showPlayerMove" type="tns:showPlayerMove"/>
+
+<xs:element name="showPlayerMoveResponse" type="tns:showPlayerMoveResponse"/>
+
+<xs:element name="updateIsCreated" type="tns:updateIsCreated"/>
+
+<xs:element name="updateIsCreatedResponse" type="tns:updateIsCreatedResponse"/>
+
+<xs:element name="updateIsFound" type="tns:updateIsFound"/>
+
+<xs:element name="updateIsFoundResponse" type="tns:updateIsFoundResponse"/>
+
+<xs:element name="updateSquare" type="tns:updateSquare"/>
+
+<xs:element name="updateSquareResponse" type="tns:updateSquareResponse"/>
+
+<xs:complexType name="joinGame">
+<xs:sequence>
+<xs:element name="uName" type="xs:string" minOccurs="0"/>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="joinGameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSquare">
+<xs:sequence>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSquareResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="showLeaderboards">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="showLeaderboardsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setPlayerMove">
+<xs:sequence>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+<xs:element name="serverTurn" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setPlayerMoveResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getPlayer2">
+<xs:sequence>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPlayer2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resetGame">
+<xs:sequence>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+<xs:element name="win" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resetGameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPlayer1">
+<xs:sequence>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPlayer1Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="register">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="isFoundReset">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="isFoundResetResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateIsFound">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="isFound" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateIsFoundResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="resetFound">
+<xs:sequence>
+<xs:element name="uName" type="xs:string" minOccurs="0"/>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resetFoundResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="showComboBox">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="showComboBoxResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="showPlayerMove">
+<xs:sequence>
+<xs:element name="serverTurn" type="xs:int"/>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="showPlayerMoveResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setResetGame">
+<xs:sequence>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setResetGameResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getIsFound">
+<xs:sequence>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getIsFoundResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setWins">
+<xs:sequence>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setWinsResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getWinLose">
+<xs:sequence>
+<xs:element name="win" type="xs:int"/>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getWinLoseResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateSquare">
+<xs:sequence>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+<xs:element name="square" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateSquareResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="setWinLose">
+<xs:sequence>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+<xs:element name="winLose" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setWinLoseResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setLoses">
+<xs:sequence>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setLosesResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="updateIsCreated">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="isCreated" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateIsCreatedResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="setDraws">
+<xs:sequence>
+<xs:element name="userID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setDrawsResponse">
+<xs:sequence/>
+</xs:complexType>
+</xs:schema>
